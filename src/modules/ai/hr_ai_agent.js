@@ -233,7 +233,7 @@ const POLICY_KNOWLEDGE_BASE = Object.freeze([
   },
   {
     rCode: 'R-058', category: '员工申诉', questionKeywords: ['申诉', '投诉', 'grievance', '举报'],
-    answer: '申诉渠道：直属上级→HRBP→人资总监→总经理信箱(hr@kangyuan.com)。工资异议3个工作日内申诉，处理周期7个工作日。违纪处分申诉5个工作日内提出。所有申诉保密处理，严禁打击报复。',
+    answer: '申诉渠道：直属上级→HRBP→人资总监→总经理信箱(hr@example.com)。工资异议3个工作日内申诉，处理周期7个工作日。违纪处分申诉5个工作日内提出。所有申诉保密处理，严禁打击报复。',
     sourceDocName: '示例集团员工申诉管理制度2026版', page: 1, effectiveDate: '2026-01-01'
   },
   {

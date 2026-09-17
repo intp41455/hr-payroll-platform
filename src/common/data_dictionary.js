@@ -1,6 +1,6 @@
 'use strict';
 
-const { BUSINESS_UNITS, LEGAL_ENTITIES } = require('./kangyuan_brand_config.js');
+const { BUSINESS_UNITS, LEGAL_ENTITIES } = require('./brand_config.js');
 
 // ===== 示例集团三大业务板块枚举（集团级分类统计标准） =====
 const BUSINESS_UNIT_CODE = Object.freeze({

@@ -27,7 +27,7 @@ const loaders = {
   si: () => require('./src/modules/master_data/social_insurance_model.js'),
   emp: () => require('./src/modules/master_data/employee_model.js'),
   attendance: () => require('./src/modules/attendance/monthly_attendance_summary.js'),
-  brand: () => require('./src/common/kangyuan_brand_config.js'),
+  brand: () => require('./src/common/brand_config.js'),
   dict: () => require('./src/common/data_dictionary.js'),
   cockpit: () => require('./src/modules/dashboard/hr_executive_cockpit.js'),
   ai: () => require('./src/modules/ai/hr_ai_agent.js'),
@@ -46,7 +46,7 @@ function safe(fn, res, label = 'unknown') {
 app.get('/api/health', (req, res) => {
   res.json({
     ok: true,
-    name: 'kangyuan-hr-platform',
+    name: 'hr-payroll-platform',
     timestamp: new Date().toISOString(),
     uptime: process.uptime(),
     modules: Object.keys(loaders),

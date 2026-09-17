@@ -88,7 +88,7 @@ data_dictionary.js:
 
 前端做 UI 校验（下拉框选项、字段提示），后端做业务计算。如果两处各写一份，改一处忘另一处就是隐性 bug。本项目的做法是 `src/common/data_dictionary.js` 被前后端**同时 import**——一处定义，处处生效。
 
-`kangyuan-brand-config.js`（品牌配置）同理：颜色、Logo、组织名称集中管理，改一处 UI 全站生效。
+`brand_config.js`（品牌配置）同理：颜色、Logo、组织名称集中管理，改一处 UI 全站生效。
 
 ---
 

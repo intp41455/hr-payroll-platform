@@ -44,7 +44,7 @@ const POSITION_TAGS = Object.freeze({
   EXECUTIVE_EXEMPT: '高管免打卡岗'
 });
 
-const { LEGAL_ENTITIES, BUSINESS_UNITS } = require('../../common/kangyuan_brand_config.js');
+const { LEGAL_ENTITIES, BUSINESS_UNITS } = require('../../common/brand_config.js');
 
 const ENTITY_MAP = Object.freeze({
   GROUP_HQ: LEGAL_ENTITIES.GROUP_HQ.name,

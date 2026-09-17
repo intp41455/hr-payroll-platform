@@ -327,7 +327,7 @@ class PayslipService {
 
     return {
       success: true,
-      pdfUrl: `https://hr.kangyuan.com/payslip/pdf/${payslip.payslipId}?token=SEC_${Date.now()}_${empId}`,
+      pdfUrl: `https://hr.example.com/payslip/pdf/${payslip.payslipId}?token=SEC_${Date.now()}_${empId}`,
       digitalSignature: true,
       watermark: `${empId}`,
       watermarkType: 'EMPLOYEE_ID',

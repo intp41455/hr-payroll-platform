@@ -174,7 +174,7 @@ class DingTalkBotClient {
 }
 
 function _generateActionUrl(anomaly, approvalNo) {
-  const baseUrl = 'https://hr.kangyuan.com/attendance/anomaly';
+  const baseUrl = 'https://hr.example.com/attendance/anomaly';
   const anomalyId = anomaly.anomalyId || 'unknown';
   const params = [`anomalyId=${encodeURIComponent(anomalyId)}`];
   if (approvalNo) params.push(`approvalNo=${encodeURIComponent(approvalNo)}`);

@@ -9,7 +9,7 @@ const {
   BUSINESS_UNITS,
   GROUP_MILESTONES,
   generateCssTokenString
-} = require('../../common/kangyuan_brand_config.js');
+} = require('../../common/brand_config.js');
 
 const ROLES = Object.freeze({
   EMPLOYEE: 'EMPLOYEE',
@@ -927,7 +927,7 @@ class ExecutiveSubscriptionBot {
         summary: exec.digestText.slice(0, 120) + '...',
         content: exec.digestText,
         charts: charts,
-        actionUrl: `https://hr.kangyuan.com/executive-cockpit?period=${encodeURIComponent(period || '')}`,
+        actionUrl: `https://hr.example.com/executive-cockpit?period=${encodeURIComponent(period || '')}`,
         priority: 'HIGH',
         needReadConfirm: true
       };
