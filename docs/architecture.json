@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "HR 薪酬自动化平台 · 架构",
+    "locale": "zh-CN",
+    "quality_profile": "showcase",
+    "viewBox": [980, 530],
+    "output": "docs/architecture.html"
+  },
+  "components": [
+    { "id": "user", "type": "external", "label": "HR 专员", "sublabel": "浏览器访问", "pos": [64, 244], "size": [136, 62] },
+    { "id": "fe", "type": "frontend", "label": "Vue 前端", "sublabel": "路由懒加载 + ECharts 按需", "pos": [262, 236], "size": [160, 78], "tag": "29 个模块组件" },
+    { "id": "api", "type": "backend", "label": "API 层", "sublabel": "Serverless + 独立后端", "pos": [486, 236], "size": [160, 78], "tag": "Vercel / Netlify 双部署" },
+    { "id": "rules", "type": "backend", "label": "规则引擎", "sublabel": "版本化 + 特殊覆盖", "pos": [710, 96], "size": [172, 66], "tag": "可追溯变更" },
+    { "id": "payroll", "type": "backend", "label": "薪酬核算", "sublabel": "多银行格式导出", "pos": [710, 216], "size": [172, 66] },
+    { "id": "ai", "type": "backend", "label": "HR AI Agent", "sublabel": "自然语言查询", "pos": [710, 336], "size": [172, 66] },
+    { "id": "data", "type": "database", "label": "数据层", "sublabel": "数据字典 + 主数据", "pos": [486, 396], "size": [160, 62] }
+  ],
+  "boundaries": [
+    { "kind": "security-group", "label": "Serverless 部署", "wraps": ["api", "rules", "payroll", "ai"] }
+  ],
+  "connections": [
+    { "id": "user-fe", "from": "user", "to": "fe", "variant": "emphasis" },
+    { "id": "fe-api", "from": "fe", "to": "api", "label": "HTTP", "variant": "emphasis", "labelDy": -33 },
+    { "id": "api-rules", "from": "api", "to": "rules", "variant": "dashed" },
+    { "id": "api-payroll", "from": "api", "to": "payroll", "variant": "emphasis" },
+    { "id": "api-ai", "from": "api", "to": "ai", "variant": "dashed" },
+    { "id": "api-data", "from": "api", "to": "data", "variant": "dashed" }
+  ],
+  "cards": [
+    {
+      "dot": "cyan",
+      "title": "工程亮点",
+      "items": [
+        "测试文件 38 个 + 根目录脚本 13 个 = 共 51 个测试，比业务模块还多",
+        "路由懒加载 + ECharts 按需引入，首次加载体积减少 46%",
+        "规则引擎带版本化与特殊覆盖，变更可追溯",
+        "薪酬支持多银行格式导出（含字段顺序映射与表头适配）"
+      ]
+    },
+    {
+      "dot": "amber",
+      "title": "部署与边界",
+      "items": [
+        "双部署：Vercel Functions + Netlify Functions 均已配置",
+        "成品 MVP，业务逻辑与界面完整，未投入实际公司运行",
+        "品牌与组织架构已泛化为示例数据，真实公司信息已清除",
+        "银行支付网关只含字段名定义与示例表头，无真实账号"
+      ]
+    }
+  ]
+}
