@@ -157,12 +157,12 @@ const AREA_CODE = Object.freeze({
 });
 
 const AREA_CODE_META = Object.freeze({
-  XA_LIANHU:  { name: '西安·莲湖区', desc: '集团总部、示例总部、福祉教育总部、耆祥总部所在地（艺腾国际）' },
-  XA_YANTA:   { name: '西安·雁塔区', desc: '南城长者屋、电子城长者屋、派瑞康护理院运营区域' },
-  XA_WEIYANG: { name: '西安·未央区', desc: '荣华示例·北城长者屋运营区域' },
-  XA_CHANGAN: { name: '西安·长安区', desc: '长德养老、社区日照中心布局区域' },
+  XA_LIANHU:  { name: '示例·中心城区', desc: '集团总部、示例总部、福祉教育总部、耆祥总部所在地（示例大厦）' },
+  XA_YANTA:   { name: '西安·雁塔区', desc: '示例·南城长者屋、示例·电子城长者屋、示例·护理院运营区域' },
+  XA_WEIYANG: { name: '西安·未央区', desc: '示例·北城长者屋运营区域' },
+  XA_CHANGAN: { name: '西安·长安区', desc: '示例养老机构、社区日照中心布局区域' },
   CD:         { name: '成都·锦江区', desc: '示例集团·书院街长者屋（跨省首店，日式介护）' },
-  QJ:         { name: '云南·曲靖', desc: '异地项目 - 逸晖·颐养中心康养综合体' },
+  QJ:         { name: '云南·曲靖', desc: '异地项目 - 示例·异地颐养中心康养综合体' },
   DZ:         { name: '山东·德州', desc: '山东区域合作养老机构运营' },
   TS: { name: '甘肃·天水', desc: '陇东南区域运营中心' },
   BY: { name: '甘肃·白银', desc: '兰白都市圈节点城市' },

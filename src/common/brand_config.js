@@ -53,20 +53,20 @@ const GROUP_INFO = Object.freeze({
   brandSlogan: '医康养健文娱 · 全产业链守护幸福晚年',
   brandMission: '让老人老有所养、老有所乐、老有所学、老有所依、老有所为',
   foundingYear: 2004,
-  chairman: '杨柳',
-  ceo: '王力宏',
-  cfo: '赵兴龙',
+  chairman: '示例·董事长',
+  ceo: '示例·总经理',
+  cfo: '示例·财务负责人',
   headquarters: {
-    address: '陕西省西安市莲湖区西二环南段10号艺腾国际8F',
-    phone: '029-89526911',
+    address: '示例省示例市示例区示例路 1 号',
+    phone: '0000-0000000',
     website: 'http://www.example.com'
   },
   industryTags: ['国家级服务业标准化试点', '国家智慧化示范', '陕西省医养结合典型案例', '西安市养老服务产教融合基地'],
   honors: [
-    '中国老龄产业协会常务理事单位（2020-08）',
-    '西安市老年医养结合学会会长单位（2020-07）',
-    '陕西省老龄产业协会常务副会长单位（2021-03）',
-    '国家级服务业标准化试点（2021-05入选）',
+    '全国性行业协会常务理事单位',
+    '市级行业学会会长单位',
+    '省级行业协会常务副会长单位',
+    '国家级服务业标准化试点入选',
     '西安市医保定点护理院运营资质（2024）'
   ]
 });
@@ -83,7 +83,7 @@ const BUSINESS_UNITS = Object.freeze({
     businessScope: '养老机构运营、长照护理、失智照护、安宁疗护、日间照料',
     registeredCapital: 4620, // 万元
     establishedYear: 2017,
-    legalRep: '杨柳',
+    legalRep: '示例·法定代表人',
     headquarters: GROUP_INFO.headquarters,
     accentColor: BRAND_COLORS.ACCENT.CLAY_BROWN,
     icon: '🏥',
@@ -93,11 +93,11 @@ const BUSINESS_UNITS = Object.freeze({
       { name: '示例养老·壹心长者屋', city: '西安', type: '失智专区特色', beds: 80, opened: '2022-04', status: '运营中' },
       { name: '示例养老·南城长者屋', city: '西安', type: '长照机构', beds: 120, opened: '2021-10', status: '运营中' },
       { name: '示例养老·康隆西城长者屋', city: '西安', type: '社区嵌入式', beds: 90, opened: '2019-05', status: '运营中' },
-      { name: '荣华示例·北城长者屋', city: '西安', type: '医养结合', beds: 150, opened: '2020-04', status: '运营中' },
+      { name: '示例·北城长者屋', city: '西安', type: '医养结合', beds: 150, opened: '2020-04', status: '运营中' },
       { name: '示例养老·电子城长者屋', city: '西安', type: '养护院', beds: 100, opened: '2020', status: '运营中' },
       { name: '示例集团·书院街长者屋（成都）', city: '成都', type: '日式介护中心', beds: 80, opened: '2019-01', status: '运营中' },
-      { name: '派瑞康养老护理院', city: '西安', type: '护理院', beds: 180, opened: '2019-10', status: '运营中' },
-      { name: '云南逸晖·颐养中心', city: '曲靖', type: '异地康养综合体', beds: 300, opened: '2024筹建', status: '筹建中' }
+      { name: '示例·护理院', city: '西安', type: '护理院', beds: 180, opened: '2019-10', status: '运营中' },
+      { name: '示例·异地颐养中心', city: '曲靖', type: '异地康养综合体', beds: 300, opened: '2024筹建', status: '筹建中' }
     ],
     scaleSummary: {
       operationCities: ['西安', '成都', '德州', '曲靖'],
@@ -119,13 +119,13 @@ const BUSINESS_UNITS = Object.freeze({
     businessScope: '养老人才学历教育、社会培训、管理人才交流、产学研合作',
     registeredCapital: 100, // 万元
     establishedYear: 2019,
-    legalRep: '杨柳',
+    legalRep: '示例·法定代表人',
     headquarters: GROUP_INFO.headquarters,
     accentColor: BRAND_COLORS.ACCENT.SKY_BLUE,
     icon: '🎓',
     partners: [
-      '陕西中医药大学', '四川中医药高等专科学校', '四川卫生康复职业学院',
-      '铜川职业技术学院', '汉中市第一职业中等专科学校', '南郑区职教中心'
+      '示例中医药大学', '示例中医药高等专科学校', '示例卫生康复职业学院',
+      '示例职业技术学院', '示例市职业中等专科学校', '示例区职教中心'
     ],
     teachingFeatures: ['年轻化', '专业化', '国际化', '实战化'],
     teachingMode: '在校实训 · 假期见习 · 国外研修 · 基地实习',
@@ -155,7 +155,7 @@ const BUSINESS_UNITS = Object.freeze({
     businessScope: '社区日间照料、居家上门服务、老年助餐、慢病管理、智慧养老、旅居享老',
     registeredCapital: 500, // 万元
     establishedYear: 2022,
-    legalRep: '赵兴龙',
+    legalRep: '示例·法定代表人',
     headquarters: GROUP_INFO.headquarters,
     accentColor: BRAND_COLORS.ACCENT.TERRACOTTA,
     icon: '🏡',
@@ -284,7 +284,7 @@ const GROUP_MILESTONES = Object.freeze([
   { year: 2004, title: '集团创立', desc: '董事会通过进军养老产业战略决议' },
   { year: 2008, title: '多元化布局', desc: '成立天盛进出口、科威天时环保，形成跨产业投资框架' },
   { year: 2012, title: '养老启航', desc: '正式立项养老板块，赴日欧澳考察全球养老模式' },
-  { year: 2014, title: '日本研修通道', desc: '成为日中介护事业交流协会理事单位' },
+  { year: 2014, title: '日本研修通道', desc: '成为国际介护交流机构理事单位' },
   { year: 2015, title: '介护研修制度化', desc: '选送优秀介护师赴日研修机制建立' },
   { year: 2017, title: '日医战略合作', desc: '与日本日医集团（日本销量第一养老公司）签署战略合作协议' },
   { year: 2017, title: '示例成立', desc: '陕西示例集团养老服务有限公司注册成立，注册资本4620万' },
@@ -294,16 +294,16 @@ const GROUP_MILESTONES = Object.freeze([
   { year: 2019, title: '成都书院街开业', desc: '跨省扩张，示例集团书院街长者屋（成都）开业' },
   { year: 2019, title: '医养结合签约', desc: '旗下机构与土门社区卫生服务中心签订医养结合协议' },
   { year: 2020, title: '常春藤河北布局', desc: '示例常春藤健康管理（河北）有限公司成立' },
-  { year: 2020, title: '荣华示例北城开业', desc: '携手荣华乐养打造的北城长者屋试运营' },
-  { year: 2020, title: '介护订单班开班', desc: '福祉教育与南郑区职教中心合办老年服务与管理介护班正式开课' },
-  { year: 2020, title: '行业协会任职', desc: '当选中国老龄产业协会常务理事单位、西安市老年医养结合学会会长单位' },
+  { year: 2020, title: '荣华示例北城开业', desc: '与本地养老服务商合作的北城长者屋试运营' },
+  { year: 2020, title: '介护订单班开班', desc: '福祉教育与示例区职教中心合办老年服务与管理介护班正式开课' },
+  { year: 2020, title: '行业协会任职', desc: '当选全国性行业协会常务理事单位、市级行业学会会长单位' },
   { year: 2021, title: '耆祥布局启动', desc: '惠北、远东东、五一社区3家日照中心相继开业' },
   { year: 2021, title: '国家级标准化试点', desc: '成功入选国家级服务业标准化试点项目' },
-  { year: 2021, title: '省级协会任职', desc: '当选陕西省老龄产业协会常务副会长单位' },
+  { year: 2021, title: '省级协会任职', desc: '当选省级行业协会常务副会长单位' },
   { year: 2022, title: '耆祥公司化运作', desc: '西安示例社区居家养老服务有限公司注册成立，注册资本500万' },
-  { year: 2022, title: '庆阳职院签约', desc: '示例集团与庆阳职业技术学院签署合作协议' },
-  { year: 2023, title: '床位破千 · 标准验收', desc: '机构总床位1051张；通过国家标准化试点、国家智慧化示范验收' },
-  { year: 2024, title: '机构4.0发布', desc: '示例中成·颐养中心开业；首批医保定点护理院运营；云南逸晖项目启动' }
+  { year: 2022, title: '院校合作签约', desc: '示例集团与示例职业技术学院签署合作协议' },
+  { year: 2023, title: '床位破千 · 标准验收', desc: '机构总床位约 1,000 张；通过国家标准化试点、国家智慧化示范验收' },
+  { year: 2024, title: '机构4.0发布', desc: '示例中成·颐养中心开业；首批医保定点护理院运营；异地颐养项目启动' }
 ]);
 
 // ====== 七、导出 CSS token 生成方法 ======
